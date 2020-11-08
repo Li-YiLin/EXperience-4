@@ -68,6 +68,7 @@ interface StudentManage {
 }
 ```
 ```
+//计算需要缴纳税款的方法（部分省略）
 public final static void calculator(int salary,int fee) {
 		int  year_salary = salary - fee;
 		double x = 0;
@@ -99,7 +100,7 @@ public final static void calculator(int salary,int fee) {
 ![实验结果截图](4.png)
 ---
 ## 实验感想
-
+实验本身难度并不是很大，所涉及的Java知识并不是很多。逻辑较为简单，实现功能也较为单一。应该在完成实验之后，去尝试学习一些其他的知识，以补充实验和课堂的不足。
 ## 相关知识链接
 ==和equals的区别
 https://blog.csdn.net/meism5/article/details/89029475?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522160476343019725266963449%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=160476343019725266963449&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-89029475.first_rank_ecpm_v3_pc_rank_v2&utm_term=equals%E5%92%8C%3D%3D%E7%9A%84%E5%8C%BA%E5%88%AB&spm=1018.2118.3001.4449
