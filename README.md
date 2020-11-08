@@ -4,11 +4,11 @@
 * 掌握Java中接口的定义，熟练掌握接口的定义形式以及接口的实现方法
 * 了解异常的使用方法，并在程序中根据输入情况做异常处理
 ##代码设计
-##### 设计思路
+#### 设计思路
    首先编写接口，然后用Students类实现接口。然后
-##### 流程图
+#### 流程图
 ![流程图](5.png)
-##### 核心代码
+#### 核心代码
 ```
 //初始化学生信息
 Scanner sc = new Scanner(System.in);
@@ -55,7 +55,34 @@ boolean i = true;
 		System.out.println("交税信息");
 		calculator(li.getsalary(),li.getfee());
 ```
-## 实验过程问题、
+```
+//学生管理的接口，定义学生必须要有的方法
+interface StudentManage {
+    void setfee(int fee);
+    int getfee();
+}
+```
+```
+public final static void calculator(int salary,int fee) {
+		int  year_salary = salary - fee;
+		double x = 0;
+		if (year_salary <= 36000) {
+			x = year_salary * 0.03;
+		}
+		else if (36000 < year_salary && year_salary <= 144000){
+			x = year_salary * 0.1 - 2520; }
+               
+	        ...
+	
+	
+		else if (960000 < year_salary) {
+			x = year_salary * 0.45 - 181920;
+		}
+		System.out.println("需要缴纳的税款" +x);
+	}
+```
+
+## 实验过程问题
 
 ## 实验结果
 ![实验结果截图](1.png)
